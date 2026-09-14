@@ -11,4 +11,9 @@
 		<p>One of my interests is basketball. I have been playing since a very young age and now I play for the team at Carlow.</p>
 		<p>Info on <a href='https://athletics.carlow.edu/sports/mbkb/2026-27/bios/beard_braedon_w535'>Carlow Basketball Roster</a></p>
 	</body>
+	<body>
+		<h1>Interesting Things About Me</h1>
+		<p>I have two younger brothers. One is a senior in high school and the other is a freshman at Seton Hill University. They both play Basketball. Another interesting fact is that I have an NIL deal where I get paid to post about an ankle brace.</p>
+		<p>Info on <a href='https://www.ultraankle.com/braedon-beard/?srsltid=AfmBOoqnMUD_3ON4Z-5o9DeLNbxP2bRbs04b7Bd0Ul9_NkLhl3X2-g9T'>NIL Link</a></p>
+	</body>
 </html>
