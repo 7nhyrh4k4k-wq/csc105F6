@@ -1,0 +1,55 @@
+body {
+	background-color: #d3e6e2;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	color: darkblue;
+	font-size: 36px;
+	text-align: center;
+}
+
+h2 {
+	color: purple;
+	font-size: 28px;
+}
+
+p {
+	color: brown;
+	font-size: 18px;
+}
+
+#name {
+	color: darkblue;
+}
+
+.interests {
+	background-color: white;
+	padding: 10px;
+}
+
+table {
+	background-color: yellow;
+	border-collapse: separate;
+	border-spacing: 20px 10px;
+}
+
+th {
+	color: white;
+	background-color: blue;
+	font-size: 18px;
+}
+
+td {
+	color: black;
+	background-color: orange;
+	font-size: 16px;
+}
+
+a {
+	color: green;
+}
+
+footer {
+	text-align: center;
+}
