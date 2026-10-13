@@ -1,12 +1,29 @@
 body {
 	background-color: #d3e6e2;
 	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+
+/* ===== Header ===== */
+
+header {
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-bottom: 4px solid darkblue;
+
+	/* Flexbox */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 h1 {
 	color: darkblue;
 	font-size: 36px;
 	text-align: center;
+	margin: 5px;
 }
 
 h2 {
@@ -19,37 +36,170 @@ p {
 	font-size: 18px;
 }
 
-#name {
-	color: darkblue;
+
+/* ===== Navigation ===== */
+
+nav {
+	display: flex;
+	gap: 15px;
+	margin-top: 15px;
 }
+
+nav a {
+	color: green;
+	text-decoration: none;
+	padding: 8px 12px;
+	border: 2px solid green;
+	border-radius: 5px;
+}
+
+/* Pseudoclass #1 */
+nav a:hover {
+	background-color: green;
+	color: white;
+}
+
+
+/* ===== Main Sections ===== */
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+/* Box model */
+section {
+	background-color: white;
+	padding: 20px;
+	margin: 20px 0;
+	border: 2px solid purple;
+	border-radius: 10px;
+}
+
+
+/* ===== Interests Section ===== */
 
 .interests {
 	background-color: white;
-	padding: 10px;
+
+	/* Flexbox */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+
+	/* Box model */
+	padding: 25px;
+	margin: 20px 0;
+	border: 3px solid darkblue;
+	border-radius: 10px;
 }
+
+.interests div {
+	flex: 1;
+}
+
+.interests img {
+	width: 300px;
+	border: 3px solid darkblue;
+	border-radius: 10px;
+
+	/* Box model */
+	padding: 5px;
+}
+
+
+/* ===== Links ===== */
+
+a {
+	color: green;
+}
+
+/* Pseudoclass #2 */
+a:hover {
+	color: darkblue;
+}
+
+
+/* Pseudoclass #3 */
+a:visited {
+	color: purple;
+}
+
+
+/* ===== List ===== */
+
+li {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+
+/* ===== Table ===== */
 
 table {
 	background-color: yellow;
 	border-collapse: separate;
 	border-spacing: 20px 10px;
+
+	/* Box model */
+	padding: 10px;
+	margin-top: 20px;
+	border: 3px solid darkblue;
 }
 
 th {
 	color: white;
 	background-color: blue;
 	font-size: 18px;
+	padding: 10px;
+	border: 2px solid darkblue;
 }
 
 td {
 	color: black;
 	background-color: orange;
 	font-size: 16px;
+	padding: 10px;
+	border: 1px solid black;
 }
 
-a {
-	color: green;
-}
+
+/* ===== Footer ===== */
 
 footer {
 	text-align: center;
+	background-color: white;
+
+	/* Box model */
+	padding: 15px;
+	margin-top: 30px;
+	border-top: 4px solid darkblue;
+}
+
+
+/* ===== Mobile Layout ===== */
+
+@media (max-width: 700px) {
+
+	.interests {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.interests img {
+		width: 80%;
+	}
+
+	nav {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	table {
+		width: 100%;
+		border-spacing: 5px;
+	}
 }
