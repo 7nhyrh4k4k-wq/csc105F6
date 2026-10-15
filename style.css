@@ -5,25 +5,18 @@ body {
 }
 
 
-/* ===== Header ===== */
+/* Header */
 
 header {
 	background-color: white;
 	padding: 20px;
-	margin-bottom: 20px;
+	text-align: center;
 	border-bottom: 4px solid darkblue;
-
-	/* Flexbox */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 h1 {
 	color: darkblue;
 	font-size: 36px;
-	text-align: center;
-	margin: 5px;
 }
 
 h2 {
@@ -37,10 +30,11 @@ p {
 }
 
 
-/* ===== Navigation ===== */
+/* Navigation */
 
 nav {
 	display: flex;
+	justify-content: center;
 	gap: 15px;
 	margin-top: 15px;
 }
@@ -48,158 +42,147 @@ nav {
 nav a {
 	color: green;
 	text-decoration: none;
-	padding: 8px 12px;
+	padding: 10px;
 	border: 2px solid green;
 	border-radius: 5px;
 }
 
-/* Pseudoclass #1 */
 nav a:hover {
 	background-color: green;
 	color: white;
 }
 
 
-/* ===== Main Sections ===== */
+/* Main content */
 
-main {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 0 20px;
+.container {
+	max-width: 1100px;
+	margin: 40px auto;
+	padding: 20px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
 }
 
-
-/* Box model */
-section {
+.item {
 	background-color: white;
 	padding: 20px;
-	margin: 20px 0;
 	border: 2px solid purple;
 	border-radius: 10px;
+	flex: 1 1 30%;
 }
 
-
-/* ===== Interests Section ===== */
-
-.interests {
-	background-color: white;
-
-	/* Flexbox */
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 30px;
-
-	/* Box model */
-	padding: 25px;
-	margin: 20px 0;
-	border: 3px solid darkblue;
-	border-radius: 10px;
-}
-
-.interests div {
-	flex: 1;
-}
-
-.interests img {
-	width: 300px;
-	border: 3px solid darkblue;
-	border-radius: 10px;
-
-	/* Box model */
-	padding: 5px;
-}
-
-
-/* ===== Links ===== */
-
-a {
-	color: green;
-}
-
-/* Pseudoclass #2 */
-a:hover {
-	color: darkblue;
-}
-
-
-/* Pseudoclass #3 */
-a:visited {
-	color: purple;
-}
-
-
-/* ===== List ===== */
-
-li {
-	font-size: 17px;
-	margin-bottom: 10px;
-}
-
-
-/* ===== Table ===== */
-
-table {
-	background-color: yellow;
-	border-collapse: separate;
-	border-spacing: 20px 10px;
-
-	/* Box model */
-	padding: 10px;
-	margin-top: 20px;
-	border: 3px solid darkblue;
-}
-
-th {
-	color: white;
-	background-color: blue;
-	font-size: 18px;
-	padding: 10px;
+.item img {
+	max-width: 100%;
+	height: auto;
 	border: 2px solid darkblue;
 }
 
-td {
-	color: black;
-	background-color: orange;
-	font-size: 16px;
-	padding: 10px;
-	border: 1px solid black;
-}
 
-
-/* ===== Footer ===== */
+/* Footer */
 
 footer {
-	text-align: center;
 	background-color: white;
-
-	/* Box model */
+	text-align: center;
 	padding: 15px;
-	margin-top: 30px;
 	border-top: 4px solid darkblue;
 }
 
 
-/* ===== Mobile Layout ===== */
+/* MOBILE - 600px and below */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
-	.interests {
-		flex-direction: column;
+	body {
 		text-align: center;
 	}
 
-	.interests img {
-		width: 80%;
+	header {
+		padding: 25px 10px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 18px;
 	}
 
 	nav {
-		flex-wrap: wrap;
-		justify-content: center;
+		flex-direction: column;
+		gap: 10px;
 	}
 
-	table {
-		width: 100%;
-		border-spacing: 5px;
+	nav a {
+		font-size: 18px;
+		padding: 15px;
+	}
+
+	.container {
+		flex-direction: column;
+		padding: 15px;
+		margin: 20px auto;
+	}
+
+	.item {
+		width: auto;
+	}
+}
+
+
+/* TABLET - 601px to 1024px */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.item {
+		flex: 1 1 40%;
+	}
+
+	h1 {
+		font-size: 34px;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+
+	p {
+		font-size: 17px;
+	}
+}
+
+
+/* DESKTOP - 1025px and larger */
+
+@media (min-width: 1025px) {
+
+	.container {
+		gap: 40px;
+		padding: 40px;
+	}
+
+	.item {
+		flex: 1 1 28%;
+		padding: 25px;
+	}
+
+	header {
+		padding: 30px;
+	}
+
+	footer {
+		margin-top: 40px;
 	}
 }
