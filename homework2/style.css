@@ -1,1 +1,68 @@
+body {
+	background-color: #dfd5ed;
+}
 
+p {
+	font-size: 22px;
+	color: brown;
+	font-style: italic;
+}
+
+#CSC105 {
+	color: blue;
+}
+
+h2 {
+	color: purple;
+}
+
+table {
+	background-color: yellow
+}
+
+td, th {
+	background-color: blue;
+}
+
+td.office-hour-cell {
+	background-color: orange;
+}
+
+td:hover {
+	background-color: white;
+}
+
+
+.info-section {
+	font-size: 50px;
+}
+
+p {
+	padding: 10px 5px;
+	margin: 20px 10px;
+	margin-left: 5px;
+	
+	border: 5px dotted black;
+	
+	text-align: center;
+	
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:active {
+	color: purple;
+}
