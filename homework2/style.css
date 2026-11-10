@@ -4,7 +4,9 @@ body {
 }
 h2 {
 	background-color: light grey;
+	font-size: 25px;
 }
 h1 {
 	color: grey
+	font-size: 40px;
 }
