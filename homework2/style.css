@@ -1,7 +1,10 @@
 body {
 	background-color: light purple;
-	color: yellow;
+	color: gold;
 }
 h2 {
 	background-color: light grey;
+}
+h1 {
+	color: grey
 }
