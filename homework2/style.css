@@ -1,9 +1,10 @@
 body {
-	background-color: light purple;
+	background-color: lightpurple;
 	color: gold;
+	font-family: Arial, sans-serif;
 }
 h2 {
-	background-color: light grey;
+	background-color: lightgrey;
 	font-size: 25px;
 }
 h1 {
