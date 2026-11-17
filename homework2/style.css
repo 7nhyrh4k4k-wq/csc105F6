@@ -7,6 +7,9 @@ h2 {
 	background-color: lightgrey;
 	font-size: 25px;
 }
+#header {
+		background-color: grey;
+	}
 h1 {
 	text-align: center;
 	color: grey;
