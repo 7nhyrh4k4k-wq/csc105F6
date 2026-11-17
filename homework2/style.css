@@ -7,11 +7,16 @@ h2 {
 	background-color: lightgrey;
 	font-size: 25px;
 }
-#header {
-		background-color: grey;
-	}
 h1 {
 	text-align: center;
 	color: grey;
 	font-size: 40px;
+}
+#header {
+		background-color: grey;
+		padding: 20px;
+}
+.highlight {
+	background-color: lightgrey;
+	padding: 20px;
 }
