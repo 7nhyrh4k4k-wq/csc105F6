@@ -27,3 +27,9 @@ h1 {
 	border: 10px solid black;
 	margin: 15px;
 }
+a:link {
+	color: blue;
+}
+a:link {
+	color: purple;
+}
