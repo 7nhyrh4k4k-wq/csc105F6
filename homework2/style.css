@@ -16,6 +16,9 @@ h1 {
 	font-size: 40px;
 }
 #header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		background-color: black;
 		padding: 25px;
 		border: 5px solid gold;
