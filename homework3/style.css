@@ -1,1 +1,22 @@
-
+body {
+	background-color: lavender;
+	color: gold;
+	font-family: Arial, sans-serif;
+}
+h2 {
+	background-color: grey;
+	font-size: 25px;
+}
+h1 {
+	text-align: center;
+	color: grey;
+	font-size: 40px;
+}
+#header {
+		background-color: black;
+		padding: 20px;
+}
+.highlight {
+	background-color: lightgrey;
+	padding: 20px;
+}
