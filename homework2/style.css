@@ -6,6 +6,9 @@ body {
 h2 {
 	background-color: grey;
 	font-size: 25px;
+	padding: 10px;
+	border: 5px dashed black;
+	margin: 5px;
 }
 h1 {
 	text-align: center;
