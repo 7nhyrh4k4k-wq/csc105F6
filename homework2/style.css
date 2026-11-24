@@ -15,12 +15,12 @@ h1 {
 #header {
 		background-color: black;
 		padding: 25px;
-		border: 5px gold;
+		border: 5px solid gold;
 		margin: 20px;
 }
 .highlight {
 	background-color: lightgrey;
 	padding: 20px;
-	border: 10px black;
+	border: 10px solid black;
 	margin: 15px;
 }
